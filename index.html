@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная панель управления</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <header class="header">
+        <h1>📊 Моя панель управления</h1>
+        <div class="controls">
+            <button id="addTodo" class="btn btn-primary">➕ Добавить ToDo</button>
+            <button id="addQuote" class="btn btn-secondary">💬 Добавить цитаты</button>
+            <button id="addWeather" class="btn btn-info">🌤️ Добавить погоду</button>
+            <button id="addCrypto" class="btn btn-warning">💰 Добавить крипту</button>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div id="dashboard" class="dashboard"></div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

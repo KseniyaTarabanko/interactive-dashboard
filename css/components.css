@@ -1,0 +1,214 @@
+.widget {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.widget:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.widget-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+}
+
+.widget-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.control-btn:hover {
+    background: #f0f0f0;
+}
+
+/* ToDo Widget Styles */
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.todo-input button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.todo-list {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.todo-item:hover {
+    background: #e9ecef;
+}
+
+.todo-item.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.todo-text {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Quote Widget Styles */
+.quote-content {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.quote-text {
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.quote-author {
+    font-weight: 600;
+    color: #333;
+}
+
+.quote-refresh {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Weather Widget Styles */
+.weather-content {
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.weather-temp {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.weather-desc {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.weather-detail {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Crypto Widget Styles */
+.crypto-content {
+    text-align: center;
+}
+
+.crypto-price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.crypto-change {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.crypto-change.positive {
+    background: #d4edda;
+    color: #155724;
+}
+
+.crypto-change.negative {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.crypto-refresh {
+    width: 100%;
+    padding: 10px;
+    background: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
